@@ -1,0 +1,6 @@
+{
+  "name": "QuizVerse - Trivia & Brain Arena",
+  "description": "Interactive quiz game featuring GK & Current Affairs, Technology, Puzzles, and Mythology with difficulty levels, timer, lifelines, leaderboards, and a user profile system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
