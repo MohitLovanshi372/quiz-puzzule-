@@ -237,4 +237,64 @@ export const HINDI_MESSAGES: Record<string, string> = {
   "Edit username": "नाम बदलें",
   "Save username": "नाम सहेजें",
   Close: "बंद करें",
+  "Search questions & images": "सवाल और तस्वीरें खोजें",
+  "One search. A world of knowledge.": "एक खोज, ज्ञान की पूरी दुनिया।",
+  "Search our question bank in Hindi or English, or explore a topic on Google.":
+    "हमारे सवाल हिन्दी या अंग्रेज़ी में खोजें, या Google पर किसी विषय की जानकारी लें।",
+  "56 questions. Endless curiosity.": "56 सवाल, अनगिनत जिज्ञासाएँ।",
+  "Search questions and images": "सवाल और तस्वीरें खोजें",
+  "Try space, technology, mythology…": "अंतरिक्ष, तकनीक, पौराणिक कथाएँ खोजें…",
+  "Clear search": "खोज हटाएँ",
+  "Google search": "Google पर खोजें",
+  "Google Images": "Google तस्वीरें",
+  "Google results open in a new tab.": "Google के नतीजे एक नए टैब में खुलेंगे।",
+  "Try:": "आज़माएँ:",
+  Space: "अंतरिक्ष",
+  Puzzles: "पहेलियाँ",
+  Mythology: "पौराणिक कथाएँ",
+  "Study results": "सीखने के लिए नतीजे",
+  Questions: "सवाल",
+  Images: "तस्वीरें",
+  "Filter by topic": "विषय से फ़िल्टर करें",
+  "Filter by difficulty": "कठिनाई से फ़िल्टर करें",
+  "All topics": "सभी विषय",
+  "All levels": "सभी स्तर",
+  "{count} questions in our library": "हमारी लाइब्रेरी में {count} सवाल",
+  "{count} images in our gallery": "हमारी गैलरी में {count} तस्वीरें",
+  "Reveal answer & explanation": "जवाब और विवरण देखें",
+  "Show more questions": "और सवाल देखें",
+  "No matching questions yet": "इस खोज से कोई सवाल नहीं मिला",
+  "Try another topic, clear the filters, or search this topic on Google.":
+    "दूसरा विषय आज़माएँ, फ़िल्टर हटाएँ या Google पर इस विषय को खोजें।",
+  "Clear filters": "फ़िल्टर हटाएँ",
+  "No matching images in our gallery":
+    "हमारी गैलरी में इससे जुड़ी तस्वीर नहीं मिली",
+  "Try another topic or use Google Images to explore more.":
+    "दूसरा विषय आज़माएँ या और तस्वीरों के लिए Google पर खोजें।",
+  "Explore this question": "इस सवाल के बारे में और जानें",
+  "Understand on Google (opens in a new tab)":
+    "Google पर समझें (नए टैब में खुलेगा)",
+  "Understand on Google": "Google पर समझें",
+  "Related images (opens in a new tab)":
+    "संबंधित तस्वीरें (नए टैब में खुलेंगी)",
+  "Related images": "संबंधित तस्वीरें",
+  "View full image: {title} (opens in a new tab)":
+    "पूरी तस्वीर देखें: {title} (नए टैब में खुलेगी)",
+  "Image unavailable": "तस्वीर उपलब्ध नहीं है",
+  "More on Google Images": "Google पर और तस्वीरें",
+  "Image credit & license": "तस्वीर का श्रेय और लाइसेंस",
+  "Original source": "मूल स्रोत",
+  "Public domain": "सार्वजनिक डोमेन",
+  "Our blue planet": "हमारा नीला ग्रह",
+  "Earth photographed by the Apollo 17 crew in 1972.":
+    "1972 में अपोलो 17 के दल द्वारा ली गई पृथ्वी की तस्वीर।",
+  "Inside modern computing": "आधुनिक कंप्यूटिंग की दुनिया",
+  "An Intel Core i9-14900KF central processing unit.":
+    "Intel Core i9-14900KF सेंट्रल प्रोसेसिंग यूनिट।",
+  "A twist of logic": "तर्क की मज़ेदार चुनौती",
+  "A solved Rubik’s Cube, a classic three-dimensional puzzle.":
+    "हल किया हुआ रूबिक क्यूब, एक लोकप्रिय त्रि-आयामी पहेली।",
+  "Stories set in stone": "पत्थरों में बसी कहानियाँ",
+  "The Parthenon in Athens, a temple dedicated to Athena.":
+    "एथेंस का पार्थेनॉन, देवी एथेना को समर्पित मंदिर।",
 };

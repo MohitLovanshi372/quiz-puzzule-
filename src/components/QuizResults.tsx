@@ -1,3 +1,4 @@
+import { GoogleSearchLinks } from "./GoogleSearchLinks";
 import { useLanguage } from "../i18n/LanguageContext";
 import { localizeAnswer } from "../data/questions.hi";
 import React, { useEffect, useState } from "react";
@@ -354,6 +355,7 @@ export const QuizResults: React.FC<QuizResultsProps> = ({
                     </span>
                     {ans.explanation}
                   </div>
+                  <GoogleSearchLinks query={ans.questionText} />
                 </div>
               ))}
           </div>

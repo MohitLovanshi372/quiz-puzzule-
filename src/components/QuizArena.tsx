@@ -1,5 +1,6 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import { localizeQuestion } from "../data/questions.hi";
+import { GoogleSearchLinks } from "./GoogleSearchLinks";
 import React, {
   useState,
   useEffect,
@@ -661,6 +662,7 @@ const ActiveQuizArena: React.FC<QuizArenaProps> = ({
             </div>
           </div>
 
+          <GoogleSearchLinks query={currentQuestion.question} />
           {/* Next / Finish Button */}
           <div className="flex justify-end">
             <button

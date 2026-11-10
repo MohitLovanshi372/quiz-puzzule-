@@ -23,6 +23,7 @@ import {
   QUESTION_BANK,
 } from "../data/questions";
 import { soundFx } from "../utils/audio";
+import { StudyExplorer } from "./StudyExplorer";
 
 interface CategorySelectorProps {
   onStartQuiz: (
@@ -88,10 +89,16 @@ export const CategorySelector: React.FC<CategorySelectorProps> = ({
               "Pick your world and give your brain something to play with.",
             )}{" "}
           </p>
-          <a className="hero-link" href="#categories">
-            {" "}
-            {t("Find your next challenge")} <ArrowRight size={17} />
-          </a>
+          <div className="hero-actions">
+            <a className="hero-link" href="#categories">
+              {" "}
+              {t("Find your next challenge")} <ArrowRight size={17} />
+            </a>
+            <a className="hero-link hero-study-link" href="#study-explorer">
+              {t("Search questions & images")}
+              <ArrowUpRight size={16} />
+            </a>
+          </div>
         </div>
         <div className="hero-art" aria-hidden="true">
           <div className="orbit orbit-one" />
@@ -293,6 +300,7 @@ export const CategorySelector: React.FC<CategorySelectorProps> = ({
           </p>
         </aside>
       </div>
+      <StudyExplorer />
       <section className="explore-banner">
         <div className="banner-symbol">
           <Trophy size={27} />
