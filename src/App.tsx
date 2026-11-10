@@ -1,3 +1,4 @@
+import { useLanguage } from "./i18n/LanguageContext";
 import React, { useState, useEffect } from "react";
 import {
   ActiveTab,
@@ -22,6 +23,7 @@ import { LeaderboardView } from "./components/LeaderboardView";
 import { ProfileView } from "./components/ProfileView";
 
 export default function App() {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<ActiveTab>("home");
   const [profile, setProfile] = useState<UserProfile>(getStoredProfile());
   const [leaderboard, setLeaderboard] =
@@ -97,7 +99,9 @@ export default function App() {
         onSelectTab={(tab) => {
           if (activeTab === "quiz" && tab !== "quiz") {
             const confirmLeave = window.confirm(
-              "Leave active quiz? Your current progress in this round will be lost.",
+              t(
+                "Leave active quiz? Your current progress in this round will be lost.",
+              ),
             );
             if (!confirmLeave) return;
             setCurrentQuiz(null);
@@ -109,7 +113,7 @@ export default function App() {
 
       {/* Main App Content Body */}
       <main
-        className={`flex-1 w-full pb-16 ${activeTab === "home" ? "home-content" : "game-content"}`}
+        className={`flex-1 w-full pb-16 ${activeTab === "home" ? "home-content" : "game-content dark"}`}
       >
         {activeTab === "home" && (
           <CategorySelector
@@ -163,17 +167,17 @@ export default function App() {
       <footer className="site-footer text-xs py-6 text-center">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>
-            <span className="font-semibold text-slate-400">QuizVerse</span> — A
-            little wiser, every day.
+            <span className="font-semibold text-slate-400">QuizVerse</span>{" "}
+            {t("— A little wiser, every day.")}{" "}
           </div>
           <div className="flex items-center gap-4 text-[11px]">
-            <span>GK &amp; Current Affairs</span>
+            <span>{t("GK & Current Affairs")}</span>
             <span>•</span>
-            <span>Technology</span>
+            <span>{t("Technology")}</span>
             <span>•</span>
-            <span>Puzzles &amp; Logic</span>
+            <span>{t("Puzzles & Logic")}</span>
             <span>•</span>
-            <span>World Mythology</span>
+            <span>{t("World Mythology")}</span>
           </div>
         </div>
       </footer>

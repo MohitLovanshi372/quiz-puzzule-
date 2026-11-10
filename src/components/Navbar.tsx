@@ -1,3 +1,4 @@
+import { useLanguage } from "../i18n/LanguageContext";
 import React, { useState } from "react";
 import { Trophy, User, Zap, Volume2, VolumeX, LayoutGrid } from "lucide-react";
 import { ActiveTab, UserProfile } from "../types";
@@ -12,6 +13,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onSelectTab,
   profile,
 }) => {
+  const { t, language, setLanguage } = useLanguage();
   const [isMuted, setIsMuted] = useState(soundFx.getMuted());
   const handleNav = (tab: ActiveTab) => {
     soundFx.playClick();
@@ -25,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="brand"
           id="nav-logo"
           onClick={() => handleNav("home")}
-          aria-label="QuizVerse home"
+          aria-label={t("QuizVerse home")}
         >
           <span className="brand-icon">
             <Zap size={23} fill="currentColor" />
@@ -35,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="brand-period">.</span>
           </span>
         </button>
-        <nav className="main-nav" aria-label="Main navigation">
+        <nav className="main-nav" aria-label={t("Main navigation")}>
           {[
             { tab: "home" as ActiveTab, label: "Play arena", Icon: LayoutGrid },
             {
@@ -59,17 +61,36 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => handleNav(tab)}
               >
                 <Icon size={17} />
-                <span>{label}</span>
+                <span>{t(label)}</span>
               </button>
             );
           })}
         </nav>
         <div className="header-utilities">
+          <label className="language-picker">
+            <span className="sr-only">{t("Language")}</span>
+            <select
+              id="language-select"
+              value={language}
+              onChange={(event) =>
+                setLanguage(event.target.value as "en" | "hi")
+              }
+            >
+              <option value="en" lang="en">
+                English
+              </option>
+              <option value="hi" lang="hi">
+                हिन्दी
+              </option>
+            </select>
+          </label>
           <button
             type="button"
             id="btn-sound-toggle"
             className="sound-button"
-            aria-label={isMuted ? "Unmute sound effects" : "Mute sound effects"}
+            aria-label={
+              isMuted ? t("Unmute sound effects") : t("Mute sound effects")
+            }
             aria-pressed={!isMuted}
             onClick={() => setIsMuted(soundFx.toggleMute())}
           >
@@ -80,10 +101,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="player-button"
             id="nav-user-preview"
             onClick={() => handleNav("profile")}
-            aria-label={`View profile, level ${profile.level}`}
+            aria-label={t("View profile, level {level}", {
+              level: profile.level,
+            })}
           >
             <span className="player-avatar">{profile.avatar}</span>
-            <span className="player-level">LVL {profile.level}</span>
+            <span className="player-level">
+              {t("LVL")} {profile.level}
+            </span>
           </button>
         </div>
       </div>

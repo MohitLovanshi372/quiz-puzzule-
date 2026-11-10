@@ -963,3 +963,91 @@ html {
     animation: none !important;
   }
 }
+
+.language-picker select {
+  max-width: 104px;
+  padding: 8px 7px;
+  border: 1px solid #e4deee;
+  border-radius: 8px;
+  background: #faf8fd;
+  color: #7150a4;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+:lang(hi) .hero-copy h1 {
+  line-height: 1.45;
+  letter-spacing: -0.7px;
+}
+:lang(hi) .eyebrow,
+:lang(hi) .field-label {
+  letter-spacing: 0.3px;
+  font-size: 11px;
+}
+:lang(hi) .category-card h3 {
+  line-height: 1.65;
+}
+:lang(hi) .hero-copy p,
+:lang(hi) .category-card p,
+:lang(hi) .field-help {
+  line-height: 1.9;
+  font-size: 12px;
+}
+:lang(hi) .card-meta,
+:lang(hi) .stat-label,
+:lang(hi) .panel-heading p {
+  font-size: 11px;
+}
+:lang(hi) .question-options button span,
+:lang(hi) .round-summary span,
+:lang(hi) .panel-footnote {
+  font-size: 10px;
+}
+:lang(hi) .round-summary {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+:lang(hi) .category-count {
+  white-space: nowrap;
+}
+.game-content h2:focus {
+  outline: none;
+}
+@media (max-width: 760px) {
+  .header-utilities {
+    gap: 5px;
+  }
+  .language-picker select {
+    max-width: 88px;
+    padding: 7px 4px;
+    font-size: 11px;
+  }
+  .brand {
+    font-size: 20px;
+    gap: 7px;
+  }
+  .brand-icon {
+    width: 32px;
+    height: 34px;
+  }
+  .sound-button {
+    padding: 7px;
+  }
+  .player-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  :lang(hi) .hero-copy h1 {
+    font-size: 30px;
+  }
+  :lang(hi) .section-heading h2 {
+    line-height: 1.5;
+  }
+  :lang(hi) .category-count {
+    font-size: 10px;
+  }
+  :lang(hi) .category-grid {
+    align-items: stretch;
+  }
+}

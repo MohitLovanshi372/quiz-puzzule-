@@ -153,14 +153,16 @@ export const QUESTION_BANK: Question[] = [
     hint: 'Named after a city in the southern Netherlands.',
   },
   {
-    id: 'gk-m5',
-    categoryId: 'gk-current-affairs',
-    difficulty: 'medium',
-    question: 'Which country is the newest member of the BRICS bloc to attend its expanded summit along with Egypt, UAE, Iran, and Ethiopia?',
-    options: ['Saudi Arabia', 'Indonesia', 'Turkey', 'Mexico'],
-    correctIndex: 0,
-    explanation: 'BRICS underwent historic expansion in 2024, inviting nations including Saudi Arabia, UAE, Iran, Egypt, and Ethiopia to broaden global south cooperation.',
-    hint: 'Major Gulf kingdom whose state oil enterprise is Aramco.',
+    id: "gk-m5",
+    categoryId: "gk-current-affairs",
+    difficulty: "medium",
+    question:
+      "Which country became the first Southeast Asian full member of BRICS in January 2025?",
+    options: ["Saudi Arabia", "Indonesia", "Turkey", "Mexico"],
+    correctIndex: 1,
+    explanation:
+      "Brazil officially announced Indonesia’s admission as a full BRICS member on January 6, 2025.",
+    hint: "This Southeast Asian country’s largest city is Jakarta.",
   },
   // HARD
   {
@@ -484,14 +486,16 @@ export const QUESTION_BANK: Question[] = [
     hint: 'Describe what you see: count how many of each digit are grouped together.',
   },
   {
-    id: 'puz-h4',
-    categoryId: 'puzzles',
-    difficulty: 'hard',
-    question: 'Two hourglasses measure exactly 7 minutes and 4 minutes. What is the minimum number of hourglass flips required to measure exactly 9 minutes of boiling time?',
-    options: ['3 flips', '4 flips', '5 flips', '6 flips'],
-    correctIndex: 0,
-    explanation: 'Start both. At 4m (flip 4m glass). At 7m (3m has run in the 4m glass; start cooking! Flip 7m glass). At 8m (4m glass runs out; flip 7m glass back). At 9m (the 1m remaining in 7m glass runs out). Total cooking time = 9 minutes with optimal flips.',
-    hint: 'Run both together to measure the 3-minute difference.',
+    id: "puz-h4",
+    categoryId: "puzzles",
+    difficulty: "hard",
+    question:
+      "Using 7-minute and 4-minute hourglasses to measure 9 minutes: start both, flip the 4-minute glass at minute 4, the 7-minute glass at minute 7, and that same glass again at minute 8. How many flips are used, including the two initial starts?",
+    options: ["3 flips", "4 flips", "5 flips", "6 flips"],
+    correctIndex: 2,
+    explanation:
+      "Start both glasses at minute 0 (2 flips). Flip the 4-minute glass at minute 4 (3), the 7-minute glass at minute 7 (4), and the 7-minute glass again at minute 8 (5). It now has one minute of sand remaining and empties at minute 9.",
+    hint: "Count the two initial starts plus the three later flips.",
   },
 
   // ==================== WORLD MYTHOLOGY & LORE ====================

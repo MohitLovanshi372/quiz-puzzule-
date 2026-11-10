@@ -197,7 +197,7 @@ export function checkNewAchievements(profile: UserProfile, latestResult: GameRes
     'world-ambassador',
     latestResult.categoryId === 'gk-current-affairs' && latestResult.score >= 1500
   );
-  testAchievement('century-club', profile.totalScore + latestResult.score >= 5000);
+  testAchievement('century-club', profile.totalScore >= 5000);
 
   return newlyUnlocked;
 }
